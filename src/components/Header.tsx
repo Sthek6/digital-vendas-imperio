@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Home, Users, Briefcase, Package, Handshake, Mail } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -38,9 +37,13 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <div className="text-2xl font-bold text-white">
-            IMPÉRIO DIGITAL
-          </div>
+          <a href="#home" className="flex items-center">
+            <img 
+              src="/logo/logo sem fundo.png" 
+              alt="Império Digital" 
+              className="h-12 md:h-16"
+            />
+          </a>
         </div>
         
         {/* Desktop Menu */}
